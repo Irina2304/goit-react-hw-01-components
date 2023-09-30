@@ -21,6 +21,14 @@
     border: 2px solid rgb(250, 207, 151);
 }
 
+.activ {
+    background-color: forestgreen;
+}
+
+.busy {
+    background-color: red;
+}
+
 .avatar {
     width: 40px;
 }
