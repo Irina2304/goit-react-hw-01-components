@@ -2,7 +2,7 @@
 import styles from './TransactionHistory.module.css'
 
 
-export const TransactionHistiry = (props) => {
+export const TransactionHistiry = ({items}) => {
   return (
   <table className={styles.transactionHistory}>
     <thead>
@@ -13,7 +13,7 @@ export const TransactionHistiry = (props) => {
       </tr>
     </thead>
     <tbody>
-      {props.items.map(transaction => {
+      {items.map(transaction => {
         return (
           <tr key={transaction.id}>
           <td>{transaction.type}</td>

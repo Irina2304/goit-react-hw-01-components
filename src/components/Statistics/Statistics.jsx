@@ -1,11 +1,11 @@
 import styles from './Statistics.module.css'
 
-export const Statistics = (props) => {
+export const Statistics = ({title, stats}) => {
   return(
     <section className={styles.statistics}>
-      <h2 className={styles.title}> {props.title}</h2>
+      <h2 className={styles.title}> {title}</h2>
       <ul className={styles.statList}>
-        {props.stats.map(data => {
+        {stats.map(data => {
           return (
             <li className={styles.item} key={data.id}>
               <span className={styles.label}>{data.label}</span>
